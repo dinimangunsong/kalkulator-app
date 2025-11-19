@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <ImageView
+        android:src="@drawable/utmj"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="Kalkulator UTMJ"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_light" />
+</LinearLayout>

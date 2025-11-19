@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#1A1A1A">
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="16sp"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="6dp" />
+
+    <TextView
+        android:id="@+id/txtScreen"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnHistory"
+        android:padding="20dp"
+        android:gravity="end|center_vertical"
+        android:textSize="42sp"
+        android:textColor="#FFFFFF"
+        android:background="#30302e"
+        android:elevation="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="4">
+
+            <Button android:id="@+id/btn7"
+                style="@style/CalcButton" android:text="7" />
+            <Button android:id="@+id/btn8"
+                style="@style/CalcButton" android:text="8" />
+            <Button android:id="@+id/btn9"
+                style="@style/CalcButton" android:text="9" />
+            <Button android:id="@+id/btnDiv"
+                style="@style/OpButton" android:text=":" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="4">
+
+            <Button android:id="@+id/btn4"
+                style="@style/CalcButton" android:text="4" />
+            <Button android:id="@+id/btn5"
+                style="@style/CalcButton" android:text="5" />
+            <Button android:id="@+id/btn6"
+                style="@style/CalcButton" android:text="6" />
+            <Button android:id="@+id/btnMultiply"
+                style="@style/OpButton" android:text="×" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="4">
+
+            <Button android:id="@+id/btn1"
+                style="@style/CalcButton" android:text="1" />
+            <Button android:id="@+id/btn2"
+                style="@style/CalcButton" android:text="2" />
+            <Button android:id="@+id/btn3"
+                style="@style/CalcButton" android:text="3" />
+            <Button android:id="@+id/btnSubtract"
+                style="@style/OpButton" android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="4">
+
+            <Button android:id="@+id/btn0"
+                style="@style/CalcButton" android:text="0" />
+            <Button android:id="@+id/btnPoint"
+                style="@style/CalcButton" android:text="." />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/ClearButton"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/btnSqrt"
+                style="@style/OpButton"
+                android:text="√" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnPercent"
+                style="@style/OpButton"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/OpButton"
+                android:text="+" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnBackspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="B"
+                style="@style/OpButton" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="="
+                style="@style/OpButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#1A1A1A">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="202dp"
+        android:layout_height="85dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#333333"
+        android:paddingHorizontal="1dp"
+        android:paddingVertical="6dp"
+        android:text="History"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@id/guideVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtScreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="#262626"
+        android:elevation="8dp"
+        android:gravity="end|bottom"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideHorizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/CalcButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/CalcButton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/CalcButton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                style="@style/OpButton"
+                android:text=":" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/CalcButton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/CalcButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/CalcButton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/OpButton"
+                android:text="×" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/CalcButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/CalcButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/CalcButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                style="@style/OpButton"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/CalcButton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnPoint"
+                style="@style/CalcButton"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/ClearButton"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/OpButton"
+                android:text="+" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnBackspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="←"
+                style="@style/OpButton" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="="
+                style="@style/OpButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
